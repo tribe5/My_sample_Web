@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            margin: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding-top: 60px;
+            background: linear-gradient(to bottom right, green, yellow);
+        }
+
+        .login-box {
+            margin: auto;
+            width: 90%;
+            max-width: 330px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            padding-top: 30px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.467);
+            background-image: linear-gradient(to bottom left, rgba(255, 255, 0, 0.50), rgba(161, 246, 125, 0.704), rgba(0, 128, 0, 0.50));
+
+        }
+
+        @media screen and (max-width:400px) {
+            .login-box {
+                margin: auto;
+                width: 100%;
+                max-width: 90%;
+                height: 650px;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                padding-top: 30px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.467);
+                background-image: linear-gradient(to bottom left, rgba(255, 255, 0, 0.50), rgba(161, 246, 125, 0.704), rgba(0, 128, 0, 0.50));
+
+            }
+        }
+
+        .input-box {
+
+            margin-top: 25px;
+            border-radius: 8px;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input-box:focus {
+
+            margin-top: 25px;
+            border-radius: 8px;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+
+        }
+
+        .input-box::placeholder {
+            color: grey;
+            transition: 0.35s;
+        }
+
+        .input-box:focus::placeholder {
+            color: transparent;
+        }
+
+        .input-login {
+            margin-top: 25px;
+            border-radius: 8px;
+            border: 0.5px solid rgba(255, 255, 255, 0);
+            padding: 10px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: rgb(175, 251, 226);
+            transition: 0.25s;
+        }
+
+        .input-login:hover {
+            border: 0.5px solid rgba(201, 201, 201, 0.556);
+            background-color: rgb(116, 254, 208);
+        }
+
+        .input-login:focus {
+            background-color: rgb(51, 255, 187);
+        }
+
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 38px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+            color: #c2f3fd;
+            text-shadow: 0.5px 0.5px 0px rgba(211, 187, 0, 0.977);
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <div class="container">
+        <div class="login-box">
+            <h1>LOGIN</h1>
+            <input type="text" class="input-box" placeholder="username">
+            <input type="password" class="input-box" placeholder="password">
+            <input type="button" class="input-login" value="Login">
+        </div>
+    </div>
+</body>
+
+</html>
