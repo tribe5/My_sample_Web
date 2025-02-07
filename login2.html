@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            padding-top: 35px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(https://tribe5.github.io/My_sample_Web/phone.png);
+
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                background-image: url(https://tribe5.github.io/My_sample_Web/desktop.png);
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 767px) {
+            .container {
+
+                background-image: url(https://tribe5.github.io/My_sample_Web/tablet.png);
+            }
+        }
+
+        .login {
+            width: 90%;
+            max-width: 330px;
+            height: 500px;
+            margin: auto;
+            border: 0.5px solid rgba(0, 0, 255, 0.558);
+            border-radius: 20px;
+            background-color: rgba(39, 39, 255, 0.112);
+
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .input-box {
+            margin-top: 10%;
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            transition: 0.25s;
+        }
+        .input-box:focus{
+            border: 0.25px solid rgb(198, 198, 255);
+            background-color: rgba(255, 255, 255, 0.144);
+            color: white;
+        }
+
+        .input-login {
+            margin-top: 10%;
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            background-color: aqua;
+        }
+        .input-login:hover{
+            border: 1px solid beige;
+        }
+
+        .input-box::placeholder{
+            color: grey;
+            transition: 0.25s;
+        }
+        .input-box:focus::placeholder{
+           
+           color: transparent;
+        }
+
+        
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 38px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 4px;
+            color: #ffffff;
+            text-shadow: 0.5px 0.5px 0px rgba(211, 187, 0, 0.977);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>LOGIN</h1>
+            <input type="text" class="input-box" name="username" placeholder="username">
+            <input type="password" class="input-box" name="password" placeholder="password"> <br>
+            <input type="button" class="input-login" name="login" value="Login">
+        </div>
+    </div>
+</body>
+
+</html>
