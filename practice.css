@@ -1,0 +1,18 @@
+h1, h3,h4{
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 250px;
+    background-color: rgb(156, 254, 132);
+}
+
+th {
+    font-style: italic;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
