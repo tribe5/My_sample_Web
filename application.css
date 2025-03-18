@@ -1,0 +1,28 @@
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+}
+p{
+    margin: 0;
+}
+input{
+    border: none;
+    outline: none;
+}
+input:focus{
+    border-bottom: 1px solid black;
+}
+
+input[name$="Name"]{
+    border: 1px solid black;
+}
+textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
